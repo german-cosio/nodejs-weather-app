@@ -3,6 +3,7 @@ const path = require('path')
 const hbs = require('hbs')
 const geoCode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
+const port = process.env.PORT || 3000
 
 // Get templates and public folder paths
 const templatePath = path.join(__dirname, '../templates/views')
@@ -90,6 +91,6 @@ app.get('*', (req, res) => {
 })
 
 // Start the server
-app.listen(3002, () => {
-    console.log('Server is up on port 3002')
+app.listen(port, () => {
+    console.log('Server is up on port ' + port)
 })
