@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          {{> title}}
+          <link rel="stylesheet" href="./css/styles.css">
+          <link rel="icon" href="./img/weather.png">
+      
+     </head>
+     <body>
+          <div class="main-section">
+               {{> header }}
+               <p>Welcome to the home page.</p>
+               <p>This is the home page of the weather app.</p>
+               <p>You can find the weather of any city in the world here.</p>
+               <div class="search-section">
+                    {{!-- <form action="/search" method="POST"> --}}
+                    <form>
+                         <input type="text" name="search" placeholder="Search for a city...">
+                         {{!-- <button type="submit">Search</button> --}}
+                         <button>Search</button>
+                    </form>
+               </div>
+               {{!-- Messages section --}}
+               <div class="messages-section">
+                    <p id="message-1"></p>
+                    <p id="message-2"></p>
+               </div>  
+          </div>
+          {{> footer }}
+          <script src="./js/app.js"></script>
+     </body>
+</html>
