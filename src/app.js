@@ -67,6 +67,7 @@ app.get('/weather', (req, res) => {
                         forecast: forecast,
                         location: location,
                         adddress: req.query.address,
+                        weather_icon: forecast.weather_icon
                     })
                 }
             )

@@ -26,6 +26,7 @@ const getForecast = (latitude, longitude, callback) => {
             " degrees out. There is a " +
             body.current.precip +
             "% chance of rain.",
+            weather_icon: body.current.weather_icons[0],
         });
       }
     });
